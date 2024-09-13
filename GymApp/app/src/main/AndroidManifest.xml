@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/category_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/product_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GymApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".KhachHang.BillList"
+            android:exported="false" />
+        <activity
+            android:name=".product_item_cart"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_bill"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_cart"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_product_detail"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_product"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.GymApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.ProductUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".Main"
+            android:exported="false" />
+        <activity
+            android:name=".admin.CategoryManagement"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserDetail"
+            android:exported="false" />
+        <activity
+            android:name=".admin.UserManagement"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.KhachHang"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProductDetail"
+            android:exported="false" />
+        <activity
+            android:name=".ProductItemActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.CuaHangKhachHang"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.CaNhanKhachHang"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_mainscreen"
+            android:exported="false" />
+        <activity
+            android:name=".admin.ProductManagement"
+            android:exported="false" />
+        <activity
+            android:name=".admin.AdminMain"
+            android:exported="false" />
+        <activity
+            android:name=".KhachHang.client_product"
+            android:exported="false" />
+    </application>
+
+</manifest>
